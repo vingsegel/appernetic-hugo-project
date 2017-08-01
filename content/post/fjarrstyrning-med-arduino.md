@@ -3,7 +3,7 @@ date = "2014-06-08T20:28:47Z"
 draft = false
 title = "FJÄRRSTYRNING MED ARDUINO"
 aliases = [
-    "fjarrstyrning-med-arduino"
+    "2014/06/08/fjarrstyrning-med-arduino/"
 ]
 +++
 # FJÄRRSTYRNING MED ARDUINO
