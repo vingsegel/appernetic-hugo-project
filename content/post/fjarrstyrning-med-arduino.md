@@ -2,7 +2,9 @@
 date = "2014-06-08T20:28:47Z"
 draft = false
 title = "FJÄRRSTYRNING MED ARDUINO"
-alias = "fjarrstyrning-med-arduino"
+aliases = [
+    "fjarrstyrning-med-arduino"
+]
 +++
 # FJÄRRSTYRNING MED ARDUINO
 I dag köpte vi in det mesta som behövs för fjärrstyrning av trim-vingen. Vi hade en imaginär inköpslista som vi hade memorerat och gick till Kjell & Company med den. 
