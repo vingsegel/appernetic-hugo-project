@@ -5,6 +5,8 @@ title = "FJARRSTYRNING MED ARDUINO"
 aliases = [
     "/2014/06/08/fjarrstyrning-med-arduino/"
 ]
+[permalinks]
+  post = "/:year/:month/:slug/"
 +++
 # FJÄRRSTYRNING MED ARDUINO
 I dag köpte vi in det mesta som behövs för fjärrstyrning av trim-vingen. Vi hade en imaginär inköpslista som vi hade memorerat och gick till Kjell & Company med den. 
