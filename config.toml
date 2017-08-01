@@ -2,13 +2,13 @@
 baseurl = "http://www.example.com"
 
 # Site title
-title = "sitename"
+title = "Vingsegel"
 
 # Copyright
-copyright = "(c) 2015 yourname."
+copyright = "(c) 2017 Vingsegel."
 
 # Language
-languageCode = "en-EN"
+languageCode = "sv-SE"
 
 # SES friendly url:s
 canonifyurls = true
@@ -18,7 +18,7 @@ canonifyurls = true
 metaDataFormat = "toml"
 
 # Theme to use (located in /themes/THEMENAME/)
-# theme = "hugo-bootstrap"
+theme = "hugo-bootstrap-premium"
 
 # Pagination
 paginate = 10
@@ -44,13 +44,13 @@ disqusShortname = "your_disqus_shortname"
 #
 [params]
     # You can use markdown here.
-    brand = "foobar"
+    brand = "Vingsegel.se"
     topline = "few words about your site"
     footline = "code with <i class='fa fa-heart'></i>"
 
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Home".
-    home = "home"
+    home = "Hem"
 
     # Select a syntax highight.
     # Check the static/css/highlight directory for options.
@@ -60,7 +60,7 @@ disqusShortname = "your_disqus_shortname"
     googleAnalytics = "Your Google Analytics tracking code"
 
     # Sidebar social links.
-    github = "enten/hugo-boilerplate" # Your Github profile ID
+    github = "vingsegel/vingsegel" # Your Github profile ID
     bitbucket = "" # Your Bitbucket profile ID
     linkedin = "" # Your LinkedIn profile ID (from public URL)
     googleplus = "" # Your Google+ profile ID
