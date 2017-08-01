@@ -1,8 +1,8 @@
 # hostname (and path) to the root eg. https://appernetic.github.io/
-baseurl = "/"
+baseurl = "https://vingsegel.github.io/"
 
 # Remark if you want to disable multilingual support.
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "sv"
 
 # If you want all of the languages to be put below their respective language code,
 # enable DefaultContentLanguageInSubdir = true. Without enabling it english content
@@ -52,7 +52,7 @@ name = "paper"
 
 [params.popover]
 # This is a highly configurable popover form.
-enablepopover = true #enable or disable popover: true/false.
+enablepopover = false #enable or disable popover: true/false.
 posturl = "https://zapier.com/hooks/catch/1227563/" # Your zapier post hook.
 headerimage = "//placehold.it/1000x600"
 expirecookie = 5 #show it again after number of days to visitors that has not subscribed.
@@ -73,9 +73,9 @@ optin = true #opt-in: true/false
 # menu for changing language. This changes languages with js and stores the choice with the help of JavaScript in a Cookie. Then the path is rewritten with pathnamereplace.js. The name of the md files needs to have the same name for each language abbreviation to work correctly. Example: showcase.en.md and showcase.sv.md. It only works if DefaultContentLanguageInSubdir = true
 switchlang = false
 # You can use markdown here.
-BrandImage = "http://blog.appernetic.io/images/apperneticlogo.png" #top header brand image.
-brand = "My awsome blog" # brand image alt text.
-topline = "few words about your site"
+BrandImage = "logovinge.png" #top header brand image.
+brand = "Vingsegel.se" # brand image alt text.
+topline = "Vingsegel"
 footline = "code with <i class='fa fa-heart'></i>"
 
 customJS = []
@@ -83,7 +83,7 @@ customCSS = ["/css/style_custom.css"]
 
 # Text for the top menu link, which goes to the root URL for the site.
 # Default (if omitted) is "Home".
-home = "home"
+home = "Hem"
 
 mailmunchid = "" # Mailmunch site id
 sumomeid = "" # Sumome id
