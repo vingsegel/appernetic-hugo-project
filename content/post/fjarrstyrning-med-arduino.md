@@ -1,15 +1,14 @@
 +++
 date = "2014-06-08T20:28:47Z"
 draft = false
-title = "FJARRSTYRNING MED ARDUINO"
+title = "FJÄRRSTYRNING MED ARDUINO"
 aliases = [
     "/2014/06/08/fjarrstyrning-med-arduino/"
 ]
 [permalinks]
   post = "/:year/:month/:slug/"
 +++
-# FJÄRRSTYRNING MED ARDUINO
-I dag köpte vi in det mesta som behövs för fjärrstyrning av trim-vingen. Vi hade en imaginär inköpslista som vi hade memorerat och gick till Kjell & Company med den. 
+I dag köpte vi in det mesta som behövs för fjärrstyrning av trim-vingen. Vi hade en imaginär inköpslista som vi hade memorerat och gick till Kjell & Company med den. 
 
 Med oss därifrån till en kostnad av 739 SEK ink. moms fick vi:
 
