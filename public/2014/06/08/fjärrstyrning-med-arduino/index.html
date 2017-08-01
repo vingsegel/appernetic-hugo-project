@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>FJÄRRSTYRNING MED ARDUINO  &middot; Vingsegel</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="FJÄRRSTYRNING MED ARDUINO  &middot; Vingsegel ">
+<meta property="og:site_name" content="Vingsegel"/>
+<meta property="og:url" content="%22/%22/2014/06/08/fj%C3%A4rrstyrning-med-arduino/" />
+<meta property="og:locale" content="sv-SE">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2014-06-08T20:28:47Z" />
+<meta property="og:article:modified_time" content="2014-06-08T20:28:47Z" />
+
+  
+
+  
+
+  
+
+
+
+<link rel="canonical" href="%22/%22/2014/06/08/fj%C3%A4rrstyrning-med-arduino/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href=""/"/touch-icon-144-precomposed.png">
+<link rel="icon" href=""/"/favicon.png">
+<meta name="generator" content="Hugo 0.20.7" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <link rel="stylesheet" href="%22/%22/css/bootswatch/default/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="%22/%22/css/font-awesome.min.css">
+<link rel="stylesheet" href="%22/%22/css/style.css">
+
+
+
+
+  <link rel="stylesheet" href="%22/%22/css/highlight/default.css">
+
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href=""/"/">
+            <img alt="Vingsegel.se" src="">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="text-center">
+
+    <h1>FJÄRRSTYRNING MED ARDUINO
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-06-08">8 Jun, 2014</time>
+</small>
+
+
+  <small>
+  &middot; Read in about 2 min
+  &middot; (287 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=FJ%c3%84RRSTYRNING%20MED%20ARDUINO&amp;url=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f&amp;title=FJ%c3%84RRSTYRNING%20MED%20ARDUINO" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=FJ%c3%84RRSTYRNING%20MED%20ARDUINO&amp;body=Check out this site %2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+      <div class="content">
+  
+
+<p>I dag köpte vi in det mesta som behövs för fjärrstyrning av trim-vingen. Vi hade en imaginär inköpslista som vi hade memorerat och gick till Kjell &amp; Company med den.</p>
+
+<p>Med oss därifrån till en kostnad av 739 SEK ink. moms fick vi:</p>
+
+<ul>
+<li>Arduino Uno</li>
+<li>fjärrkontroll</li>
+<li>IR-sensor</li>
+<li>Arduino låda</li>
+<li>Servomotor som kan dra 4,1 kg</li>
+<li>USB sladd</li>
+<li>9 V Litium batteri</li>
+<li>kontakt till batteriet</li>
+<li>radda sockerbitar</li>
+</ul>
+
+<p>Tidigare hade jag plöjt 10 Arduino böcker och allt som är värt att läsa på nätet i ämnet. Sen hem och börja labba.</p>
+
+<h1 id="inkoppling-och-test">Inkoppling och test</h1>
+
+<p>Först gick vi till Arduino&rsquo;s webbsida, då det inte följer med några manualer och läste Getting started guiden. Det var till och med enklare än i guiden. I Win 7 hittades drivrutinen med en gång när jag pluggade in USB sladden mellan Uno och PC:n och installerades utan problem. Sen laddade vi in blink testet och det fungerade utan problem, rätt COM port hade ställts in automatiskt. Tidsåtgång ca 2 min.</p>
+
+<h1 id="inkoppling-av-servomotorn">Inkoppling av servomotorn</h1>
+
+<p>Vi gör allt i små steg, man vinner sällan tid på att försöka göra allt på en gång. Nu pluggade vi in servomotorn till Arduino enligt SingleServoExample. Det fungerade inte alls. Jag hade kopplat signalkabeln fel. När jag kopplade den till pinne 9 så fungerade den tillslut, servomotorns hjul roterade fram och tillbaka med 90 graders vinkel.</p>
+
+<p>Allt hade gått överraskande problemfritt och snabbt och enkelt. Total tidsåtgång med inköp, transport och tester: 1,5 h.</p>
+
+<p>Nästa steg är att koppla in IR-fjärrstyrningen och skriva ett litet program för detta, få det att fungera och och sen testa.</p>
+
+<p>När det är klart så ska vi bränna ner allt till Arduinon, koppla bort USB sladden och köra på 9V litium batteriet.</p>
+
+<p>Fortsättning följer&hellip;</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=FJ%c3%84RRSTYRNING%20MED%20ARDUINO&amp;url=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f&amp;title=FJ%c3%84RRSTYRNING%20MED%20ARDUINO" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=FJ%c3%84RRSTYRNING%20MED%20ARDUINO&amp;body=Check out this site %2522%2f%2522%2f%2522%2f%2522%2f2014%2f06%2f08%2ffj%25C3%25A4rrstyrning-med-arduino%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i>
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2017 Vingsegel.
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+<script src="//load.sumome.com/" data-sumo-site-id="" async="async"></script>
+
+<script src="%22/%22/js/jquery.min.js"></script>
+<script src="%22/%22/js/bootstrap.min.js"></script>
+
+<script src="%22/%22/js/angular.min.js"></script>
+<script src=""/"/js/popover/angular-storage.min.js"></script>
+<script src="%22/%22/js/highlight.pack.js"></script>
+<script src="%22/%22/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER = "", 
+EXPIRE_COOKIE = "", 
+SHOW_MODAL_TIMEOUT = "", 
+MOUSE_LEAVE = "", 
+MODAL_SIZE = "", 
+POST_URL = "", 
+SIGNUP_HEADER = "",
+HEADER_IMAGE = "",
+IMG_DESCRIPTION = "",
+SIGNUP_TEXT = "",
+INPUT_PLACEHOLDER = "",
+SUBMIT_BUTTON = "",
+SUCCESS_MESSAGE = "",
+ERROR_MESSAGE = "",
+OPTIN = "",
+COOKIE_NAME = "",
+CONTENTLANGUAGE = ""; 
+</script>
+
+<script src=""/"/js/popover/angular-modal-service.min.js"></script>
+<script src=""/"/js/angular-ismobile.min.js"></script>
+<script src=""/"/js/popover/popover.min.js"></script>
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax//MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax//config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Vingsegel</title>
+    <link>%22/%22/post/</link>
+    <description>Recent content in Posts on Vingsegel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>sv-SE</language>
+    <managingEditor>yourname@example.com (yourname)</managingEditor>
+    <webMaster>yourname@example.com (yourname)</webMaster>
+    <copyright>(c) 2017 Vingsegel.</copyright>
+    <lastBuildDate>Sun, 08 Jun 2014 20:28:47 +0000</lastBuildDate>
+    
+	<atom:link href="%22/%22/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FJÄRRSTYRNING MED ARDUINO</title>
+      <link>%22/%22/2014/06/08/fj%C3%A4rrstyrning-med-arduino/</link>
+      <pubDate>Sun, 08 Jun 2014 20:28:47 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>%22/%22/2014/06/08/fj%C3%A4rrstyrning-med-arduino/</guid>
+      <description>I dag köpte vi in det mesta som behövs för fjärrstyrning av trim-vingen. Vi hade en imaginär inköpslista som vi hade memorerat och gick till Kjell &amp;amp; Company med den.
+Med oss därifrån till en kostnad av 739 SEK ink. moms fick vi:
+ Arduino Uno fjärrkontroll IR-sensor Arduino låda Servomotor som kan dra 4,1 kg USB sladd 9 V Litium batteri kontakt till batteriet radda sockerbitar  Tidigare hade jag plöjt 10 Arduino böcker och allt som är värt att läsa på nätet i ämnet.</description>
+    </item>
+    
+  </channel>
+</rss>
